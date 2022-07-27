@@ -7,6 +7,8 @@
 
 主要参考carto、JUST和时空数据挖掘相关书籍进行分类
 
+- Transformation
+    - Single Point -> Multi Point with single element
 - Preprocessing
     - Lat Lng to Meters
     - Distance Matrix
