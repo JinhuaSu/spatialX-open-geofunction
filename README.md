@@ -30,7 +30,7 @@
     - Categorization
     - Boxing
 - Statistics
-    - Point Pattern
+    - Point Pattern Analysis: the study of the spatial arrangements of points in (usually 2-dimensional) space.
         - density
         - G function
         - F function
@@ -41,7 +41,7 @@
     - Point with attributes to Vector
     - Block to Vector
     - Similarity Computation
-- Localization
+- Localization: [选址问题的研究与分类](https://baike.baidu.com/reference/9246226/c4ccjUI4w6-2vgSBRNxGyIghgGC15syomGJc_6E6KajdXtsscV1d0x3c8wUzcAaHEMCbGF7HWi52ab3BN8ozP1RKiHtEmYs)
     - Max Cover
     - P median
     - P center
@@ -62,10 +62,11 @@
         - to 3D Mesh
         - 2D Projection
 - Similation
-    - Data Generating with Probability Model
-    - Hydrodynamic simulation
+    - Data Generating with Probability Model（基于概率的数据生成）
+    - Hydrodynamic simulation（水文模拟）
         - flood fill alg
-    - Earthquake footprint R-square
+    - Earthquake footprint R-square(灾害发生频率图)
+    - ...
 - GIS Alg
-    - Elevation Estimation
-    - Regioning(segmentation)
+    - Elevation Estimation: 高程分析
+    - Regioning(segmentation): 分区算法（分割）
