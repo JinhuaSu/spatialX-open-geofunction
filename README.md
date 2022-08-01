@@ -1,7 +1,13 @@
 # spatialX_open_geofunction
 时空数据处理函数 开源协助geofunction(UDF/UDAF/UDTF/Spatial Join/ML Algorithm)
 
-以最大覆盖举例
+以最大覆盖举例,添加贡献需要:
+1.在docs中添加关于算法背景的详细描述
+2.在alg中编写java class：比如MaxCoverAlg.java
+    - 接口规范: 算法主函数以main函数命名
+    - 输入输出: 主要的数据需要包装成com.ersi.geometry的类，输出也以geometry
+    - 对于算法超参：如阈值、迭代规则，须有默认值
+3.添加测试用例，除了基础功能外需添加模拟测试，对于不同数量量的运行时间有相关测试: 比如MaxCoverAlgTest.java
 
 ## 需求清单
 
