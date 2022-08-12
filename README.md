@@ -21,15 +21,15 @@
 
 主要参考carto、JUST和时空数据挖掘相关书籍进行分类
 
-- Transformation
+- Transformation(共性)
     - Single Point -> Multi Point with single element
-- Preprocessing
+- Preprocessing(共性)
     - Lat Lng to Meters
     - Distance Matrix
     - Nan Null data filter
     - Categorization
     - Boxing
-- Statistics
+- Statistics(**)
     - Point Pattern Analysis: the study of the spatial arrangements of points in (usually 2-dimensional) space.
         - density
         - G function
@@ -37,11 +37,11 @@
         - J function
     - Outlier Detection
         - LOF
-- Representation
+- Representation(***)
     - Point with attributes to Vector
     - Block to Vector
     - Similarity Computation
-- Localization: [选址问题的研究与分类](https://baike.baidu.com/reference/9246226/c4ccjUI4w6-2vgSBRNxGyIghgGC15syomGJc_6E6KajdXtsscV1d0x3c8wUzcAaHEMCbGF7HWi52ab3BN8ozP1RKiHtEmYs)
+- Localization(***): [选址问题的研究与分类](https://baike.baidu.com/reference/9246226/c4ccjUI4w6-2vgSBRNxGyIghgGC15syomGJc_6E6KajdXtsscV1d0x3c8wUzcAaHEMCbGF7HWi52ab3BN8ozP1RKiHtEmYs)
     - Max Cover
     - P median
     - P center
@@ -49,25 +49,25 @@
     - k-median
     - Systematic clustering
     - DBSCAN(https://github.com/databrickslabs/geoscan)
-- Classification
+- Classification(***)
     - KNN
     - Label propogation
-- Graph
+- Graph(***)
     - Points to Graph(link judge)
     - Classic Graph Algorithm
-- Special Data Structure
+- Special Data Structure(***)
     - RoadMap: Multi Line
     - Trajectory: Line with timestamp
     - 3D: Cloud Point Module
         - to 3D Mesh
         - 2D Projection
-- Similation
+- Simulation(***)
     - Data Generating with Probability Model（基于概率的数据生成）
     - Hydrodynamic simulation（水文模拟）
         - flood fill alg
     - Earthquake footprint R-square(灾害发生频率图)
     - ...
-- GIS Alg
+- GIS Alg(***)
     - Elevation Estimation: 高程分析
     - Regioning(segmentation): 分区算法（分割）
     
@@ -77,4 +77,6 @@
 - github pull request（补充README，添加docs）
 - java环境（IDE、基本语法）
 - git
+
+
 
