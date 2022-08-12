@@ -70,3 +70,11 @@
 - GIS Alg
     - Elevation Estimation: 高程分析
     - Regioning(segmentation): 分区算法（分割）
+    
+    
+## 阶段性目标
+
+- github pull request（补充README，添加docs）
+- java环境（IDE、基本语法）
+- git
+
