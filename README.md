@@ -45,7 +45,7 @@
     - Max Cover
     - P median
     - P center
-- Clustering
+- Clustering（***）
     - k-median
     - Systematic clustering
     - DBSCAN(https://github.com/databrickslabs/geoscan)
@@ -78,5 +78,8 @@
 - java环境（IDE、基本语法）
 - git
 
+## 时间节奏
+
+前松后紧： 第一次实现共性问题（数据变换） 4-6周
 
 
