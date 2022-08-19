@@ -24,13 +24,16 @@
 - 1.Transformation(共性)  数据变化
     - Single Point -> Multi Point with single element
     - Lat Lng to Meters
+    - .... 从CARTO transformation中找常用函数进行实现,如ST_BUFFER、ST_CENTERMEAN、ST_CONCAVEHULL等 https://docs.carto.com/analytics-toolbox-bigquery/sql-reference/transformations/
 - 2.Preprocessing(共性) 数据处理
     - Distance Matrix
     - Categorization
     - Boxing
+    - ... 主要实现常见的中间过程量、如距离矩阵、邻接矩阵、余弦相似度矩阵。
 - 3.异常处理（共性）
     - Nan Null data filter
     - Outlier Detection
+    - ... 对缺失值的兼容
 - 4.Statistics(**) 时空统计 http://www.css.cornell.edu/faculty/dgr2/_static/files/ov/ov_PPA_Handout.pdf
     - Point Pattern Analysis: the study of the spatial arrangements of points in (usually 2-dimensional) space. 
         - density
