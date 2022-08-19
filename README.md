@@ -21,62 +21,62 @@
 
 主要参考carto、JUST和时空数据挖掘相关书籍进行分类
 
-- Transformation(共性)
+- 1.Transformation(共性)  数据变化
     - Single Point -> Multi Point with single element
-- Preprocessing(共性)
     - Lat Lng to Meters
+- 2.Preprocessing(共性) 数据处理
     - Distance Matrix
-    - Nan Null data filter
     - Categorization
     - Boxing
-- Statistics(**)
+- 3.异常处理（共性）
+    - Nan Null data filter
+    - Outlier Detection
+- 4.Statistics(**) 时空统计
     - Point Pattern Analysis: the study of the spatial arrangements of points in (usually 2-dimensional) space.
         - density
         - G function
         - F function
         - J function
-    - Outlier Detection
-        - LOF
-- Representation(***)
+    - LOF
+- 5.Representation(***) 时空表征学习
     - Point with attributes to Vector
     - Block to Vector
     - Similarity Computation
-- Localization(***): [选址问题的研究与分类](https://baike.baidu.com/reference/9246226/c4ccjUI4w6-2vgSBRNxGyIghgGC15syomGJc_6E6KajdXtsscV1d0x3c8wUzcAaHEMCbGF7HWi52ab3BN8ozP1RKiHtEmYs)
+- 6.Localization(***): [选址问题的研究与分类](https://baike.baidu.com/reference/9246226/c4ccjUI4w6-2vgSBRNxGyIghgGC15syomGJc_6E6KajdXtsscV1d0x3c8wUzcAaHEMCbGF7HWi52ab3BN8ozP1RKiHtEmYs)
     - Max Cover
     - P median
     - P center
-- Clustering（***）
+- 7.Clustering（***）时空数据聚类
     - k-median
     - Systematic clustering
     - DBSCAN(https://github.com/databrickslabs/geoscan)
-- Classification(***)
+- 8.Classification(***) 时空数据分类
     - KNN
     - Label propogation
-- Graph(***)
+- 9.Graph(***) 图结构与图算法
     - Points to Graph(link judge)
     - Classic Graph Algorithm
-- Special Data Structure(***)
+- 10.Special Data Structure(***) 场景数据
     - RoadMap: Multi Line
     - Trajectory: Line with timestamp
     - 3D: Cloud Point Module
         - to 3D Mesh
         - 2D Projection
-- Simulation(***)
+- 11.Simulation(***) 时空模拟
     - Data Generating with Probability Model（基于概率的数据生成）
     - Hydrodynamic simulation（水文模拟）
         - flood fill alg
     - Earthquake footprint R-square(灾害发生频率图)
     - ...
-- GIS Alg(***)
+- 12.GIS Alg(***) 地理信息系统与常见应用
     - Elevation Estimation: 高程分析
     - Regioning(segmentation): 分区算法（分割）
     
-    
-## 阶段性目标
+## 建议工作分配
 
-- github pull request（补充README，添加docs）
-- java环境（IDE、基本语法）
-- git
+- 时空+机器学习方向： 数据变化（共性） + 时空表征学习(***) + 时空分类(***) + 场景数据(***)
+- 时空+算法与程序设计方向： 数据处理（共性） + 时空聚类(***) + 图结构与图算法(***) + 选址问题(***)
+- 时空+经典统计方向： 异常处理（共性） + 时空统计(**) + 时空模拟(***) + GIS算法(***)
 
 ## 时间节奏
 
@@ -85,5 +85,35 @@
 步骤： 
 1.（基础）先调研、python或r复现 
 2. (进阶) 工程（java、规范）
+
+
+## 阶段性目标
+
+- github pull request（补充README，添加docs）
+- git
+- java环境（IDE、基本语法）
+
+
+## 流程与工具链梳理
+
+工具链和代码协作流程梳理视频：https://meeting.tencent.com/v2/cloud-record/share?id=ada33c79-81f6-4fc9-be7c-2303dbaa3183&from=3
+
+视频中未详细讲的工具和软件操作方法下附详细文档：
+
+- https://ga2hks.yuque.com/docs/share/21c0bc42-d5bc-48ea-a8a9-1117972c6d47?# 《Git 入门使用》
+- https://ga2hks.yuque.com/docs/share/5848aa60-0505-478d-887f-baa16c4586bf?# 《Github入门》
+- https://ga2hks.yuque.com/docs/share/61cfd6c6-6e41-4e75-8052-bca1d07cd1d6?# 《linux基础操作文档》
+- https://ga2hks.yuque.com/docs/share/6432bd17-d04b-43e1-8c64-79deca34cdfb?# 《Windows系统连接共享集群》
+- JAVA 马士兵（选择基础语法、IDEA以及MAVEN使用部分看看即可） 链接: https://pan.baidu.com/s/1hR5ozVh0Gj-PHWRiyleonw 提取码: o9f8 
+--来自百度网盘超级会员v4的分享
+
+
+
+
+
+
+
+
+
 
 
