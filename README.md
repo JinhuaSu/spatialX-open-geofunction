@@ -1,4 +1,4 @@
-# spatialX_open_geofunction
+# spatialX open geofunction
 时空数据处理函数 开源协助geofunction(UDF/UDAF/UDTF/Spatial Join/ML Algorithm)
 
 ## 背景
@@ -31,13 +31,13 @@
 - 3.异常处理（共性）
     - Nan Null data filter
     - Outlier Detection
-- 4.Statistics(**) 时空统计
-    - Point Pattern Analysis: the study of the spatial arrangements of points in (usually 2-dimensional) space.
+- 4.Statistics(**) 时空统计 http://www.css.cornell.edu/faculty/dgr2/_static/files/ov/ov_PPA_Handout.pdf
+    - Point Pattern Analysis: the study of the spatial arrangements of points in (usually 2-dimensional) space. 
         - density
         - G function
         - F function
         - J function
-    - LOF
+    - LOF https://en.wikipedia.org/wiki/Local_outlier_factor
 - 5.Representation(***) 时空表征学习
     - Point with attributes to Vector
     - Block to Vector
@@ -51,32 +51,32 @@
     - Systematic clustering
     - DBSCAN(https://github.com/databrickslabs/geoscan)
 - 8.Classification(***) 时空数据分类
-    - KNN
-    - Label propogation
-- 9.Graph(***) 图结构与图算法
+    - KNN https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm
+    - Label propogation https://neo4j.com/docs/graph-data-science/current/algorithms/label-propagation/
+- 9.Graph(***) 图结构与图算法 https://neo4j.com/docs/graph-data-science/current/algorithms/
     - Points to Graph(link judge)
     - Classic Graph Algorithm
-- 10.Special Data Structure(***) 场景数据
+- 10.Special Data Structure(***) 场景数据 https://github.com/Esri/geometry-api-java
     - RoadMap: Multi Line
     - Trajectory: Line with timestamp
     - 3D: Cloud Point Module
         - to 3D Mesh
         - 2D Projection
-- 11.Simulation(***) 时空模拟
-    - Data Generating with Probability Model（基于概率的数据生成）
-    - Hydrodynamic simulation（水文模拟）
+- 11.Simulation(***) 时空模拟 
+    - Data Generating with Probability Model（基于概率的数据生成） 随机过程
+    - Hydrodynamic simulation（水文模拟） https://www.iww.rwth-aachen.de/cms/iww/Studium/Lehre/Master/~mvxs/Hydrodynamische-Simulation/?lidx=1
         - flood fill alg
-    - Earthquake footprint R-square(灾害发生频率图)
+    - Earthquake footprint R-square(灾害发生频率图)  [shake map](https://earthquake.usgs.gov/data/shakemap/)
     - ...
-- 12.GIS Alg(***) 地理信息系统与常见应用
-    - Elevation Estimation: 高程分析
-    - Regioning(segmentation): 分区算法（分割）
+- 12.GIS Alg(***) 地理信息系统与常见应用 (针对GDAL等数据类型做一定适配)
+    - Elevation Estimation: 高程分析 (基于遥感影像 https://ieeexplore.ieee.org/document/8835831)
+    - Regioning(segmentation): 分区算法（分割） （基于遥感的GIS https://icode.best/i/09803245888941）
     
 ## 建议工作分配
 
 - 时空+机器学习方向： 数据变化（共性） + 时空表征学习(***) + 时空分类(***) + 场景数据(***)
 - 时空+算法与程序设计方向： 数据处理（共性） + 时空聚类(***) + 图结构与图算法(***) + 选址问题(***)
-- 时空+经典统计方向： 异常处理（共性） + 时空统计(**) + 时空模拟(***) + GIS算法(***)
+- 时空+经典统计方向： 异常处理（共性） + 时空统计(**) + 时空模拟(***) + 基于遥感的经典GIS算法(***)
 
 ## 时间节奏
 
