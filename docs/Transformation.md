@@ -32,9 +32,8 @@
   d=2 r \arcsin \left(\sqrt{\sin ^{2}\left(\frac{lat_{2}-lat_{1}}{2}\right)+\cos lat_{1} \cdot \cos lat_{2} \cdot \sin ^{2}\left(\frac{lon_{2}-lon_{1}}{2}\right)}\right)
   $$
   
-  - $d$为两点间的距离
-  - $r$为地球半径
-  - $(lon_{1}, lat_{1})$ 和 $(lon_{2},lat_{2})$分别为点1和点$2$的经纬度坐标
+  - $d$为两点间的距离， $r$为地球半径
+  - $(lon_{1}, lat_{1})$ 和 $(lon_{2}, lat_{2})$分别为点1和点$2$的经纬度坐标
 
 ### PointFilter
 
@@ -106,6 +105,7 @@
 - 输出：由输入点集所组成多边形的质心
 
 - 实现：[维基百科](https://en.wikipedia.org/wiki/Centroid#Centroid_of_polygon)
+  
   以二维的情况为例，多边形质心的计算公式为
   
   $$
@@ -154,8 +154,8 @@
   \end{aligned}
   $$
 
-  - $d$为两点间的距离，$r$为地球半径
-  - ($lon_{1}$，$lat_{1}$) 和 ($lon_{2}$，$lat_{2}$)分别为起点和终点的经纬度坐标
+  - $d$为两点间的距离， $r$为地球半径
+  - $(lon_{1}，lat_{1})$ 和 $(lon_{2}，lat_{2})$分别为起点和终点的经纬度坐标
 
 ### LineInterpolatePoint
 
