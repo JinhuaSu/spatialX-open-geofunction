@@ -3,8 +3,13 @@
 ## 1. Intermediate matrix 中间过程矩阵
 ### 1.1 distance matrix 距离矩阵
 - 函数名：<kbd>disMatrix( )</kbd>
-- 定义：给定$N$个空间中的点，它们的距离矩阵是一个非负实数构成的$N \times N$对称阵。给定$n \times m$阶矩阵$X$，满足$X=[x_1,x_2,...,x_i,...,x_n]^T$中第$i$行向量$x_i$是$m$维行向量，则$x_i,x_j$的距离定义为：$D_{ij}=\Vert x_i-x_j \Vert$。并且在常规计算距离的方法外，考虑加入权重$\omega _{ij}$计算距离矩阵。
-- 输入：点的信息（位置、特征），各点的权重。
+- 定义：给定点，通过不同距离计算方式分别计算两点之间的距离。给定$N$个空间中的点，它们的距离矩阵是一个非负实数构成的$N \times N$对称阵。给定$n \times m$阶矩阵$X$，满足$X=[x_1,x_2,...,x_i,...,x_n]^T$中第$i$行向量$x_i$是$m$维行向量，则$x_i,x_j$的距离定义为：
+    - 欧式距离：<kbd>Euclidean</kbd>
+    $d_{ij}=\Vert \omega _{ij} \times (x_i-x_j) \Vert$，$\omega _{ij}$为特定问题下需要加入的$i,j$间权重，默认为1。
+    - 曼哈顿距离：<kbd>Manhattan</kbd>
+    $d_{ij}=\vert \omega _{ij} \times (x_i-x_j) \vert$，$\omega _{ij}$为特定问题下需要加入的$i,j$间权重，默认为1。
+
+- 输入：点的信息（位置、特征），各点的权重，距离类型。
 - 输出：储存每两个点距离的一维数组，也可以导出完整的距离矩阵（对称阵）。
 
 ### 1.2 Adjacency matrix 邻接矩阵
@@ -29,7 +34,9 @@ $\omega _{ij}$表示$i$到$j$关系的强弱。
 - 函数名：<kbd>cosSimilarity( )</kbd>
 - 定义：$n$维空间两个$n$维向量之间角度的余弦。
 $$cosSimilarity(A,B)=\frac{A\cdot B}{\Vert A \Vert \cdot \Vert B \Vert}=\frac{\sum_{i=1}^{n}(A_i\times B_i)}{\sqrt{\sum_{i=1}^{n}A_i^2}\cdot \sqrt{\sum_{i=1}^{n}B_i^2}}$$
-- 输入：两组点的信息（位置、特征）。
+- 输入：
+    - 两组点的信息（位置、特征）。
+    - 输入三个点$ABC$，求$ABC$的夹角，其中$B$为顶点。
 - 输出：余弦相似度值。
 ***
 ## 2. Categorization 离散化
